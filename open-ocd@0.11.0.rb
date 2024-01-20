@@ -5,11 +5,6 @@ class OpenOcd < Formula
   license "GPL-2.0-or-later"
   revision 1
 
-  livecheck do
-    url :stable
-    regex(%r{url=.*?/openocd[._-]v?(\d+(?:\.\d+)+)\.t}i)
-  end
-
   head do
     url "https://github.com/openocd-org/openocd.git", tag: "v0.11.0"
 
