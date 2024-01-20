@@ -1,4 +1,4 @@
-class OpenOcd < Formula
+class OpenOcdAT0110 < Formula
   desc "On-chip debugging, in-system programming and boundary-scan testing"
   homepage "https://openocd.org/"
   url "https://downloads.sourceforge.net/project/openocd/openocd/0.11.0/openocd-0.11.0.tar.bz2"
