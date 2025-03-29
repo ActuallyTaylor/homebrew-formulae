@@ -1,8 +1,8 @@
 class CerealConsole < Formula
   desc "Terminal based serial console"
   homepage "https://github.com/ActuallyTaylor/cereal"
-    url "1f11a06ee2c29ef4348eccfe7256d0ae20e3e7e098290731a6c92317e9248c74"
-  sha256 "3604d71d0f1d8e1965676ef16869bbf0860057e28f61afa5a20568f5c0af2aae"
+    url "https://github.com/ActuallyTaylor/cereal/archive/refs/tags/1.1.1.tar.gz"
+  sha256 "1f11a06ee2c29ef4348eccfe7256d0ae20e3e7e098290731a6c92317e9248c74"
   license "GPL-3.0-or-later"
   head "https://github.com/ActuallyTaylor/cereal.git", branch: "main"
 
