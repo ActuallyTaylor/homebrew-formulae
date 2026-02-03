@@ -1,5 +1,5 @@
 class CerealConsole < Formula
-  desc "Terminal based serial console"
+  desc "A terminal based macOS Serial Console written in Swift"
   homepage "https://github.com/ActuallyTaylor/cereal"
 
   url "https://github.com/ActuallyTaylor/cereal.git",
