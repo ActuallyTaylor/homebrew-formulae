@@ -1,8 +1,11 @@
 class CerealConsole < Formula
   desc "Terminal based serial console"
   homepage "https://github.com/ActuallyTaylor/cereal"
-    url "https://github.com/ActuallyTaylor/cereal/archive/refs/tags/1.2.0.tar.gz"
-  sha256 "62b76bfe6c5d929d76437a05a24230221c0088b55e2395d2a3affd697acfd51c"
+
+  url "https://github.com/ActuallyTaylor/cereal.git",
+    tag:      "1.3.0",
+    revision: "2dbaa54f4d1e0426520de2bb2ba930a80e7ffd7d"
+
   license "GPL-3.0-or-later"
   head "https://github.com/ActuallyTaylor/cereal.git", branch: "main"
 
@@ -16,13 +19,14 @@ class CerealConsole < Formula
     args = if OS.mac?
       ["--disable-sandbox"]
     else
-      ["--static-swift-stdlib"]
+      [""]
     end
+
     system "swift", "build", *args, "-c", "release"
     bin.install ".build/release/cereal" => "cereal"
   end
 
   test do
-    system bin/"cereal", "-h"
+    system bin/"cereal", "-v"
   end
 end
